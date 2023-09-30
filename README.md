@@ -58,6 +58,10 @@ npm run build:windows-32
 
 **Note**: Remember to replace `**YOUR_APP_NAME**` in the build scripts with your desired application name in the `package.json`.
 
+## Note for Vite Users
+
+If you're building your web application with Vite, ensure you set "base": "./", in your vite.config.js or vite.config.ts to ensure correct asset paths in the built Electron app.
+
 ## License
 
 This project is licensed under the MIT License.
