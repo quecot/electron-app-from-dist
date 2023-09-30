@@ -14,13 +14,21 @@ An Electron application that loads a local web page from the 'dist' directory.
 
 ## Getting Started
 
-1. Install the dependencies:
+1. Clone the repository:
+
+```sh
+git clone git@github.com:quecot/electron-app-from-dist.git
+```
+
+2. Populate the `dist/` dist directory with your web application files.
+
+3. Install the dependencies:
 
 ```sh
 npm install
 ```
 
-2. Run the application in development mode:
+4. Run the application in development mode:
 
 ```sh
 npm run dev
