@@ -1,0 +1,25 @@
+{
+  "name": "electron-app-from-dist",
+  "version": "1.0.0",
+  "description": "An Electron application that loads a local web page from the 'dist' directory.",
+  "main": "main.cjs",
+  "scripts": {
+    "preinstall": "npx only-allow npm",
+    "dev": "electron .",
+    "build:macos-arm64": "electron-packager . YOUR_APP_NAME --overwrite --platform=darwin --arch=arm64 --prune=true --out=release-builds",
+    "build:windows": "electron-packager . YOUR_APP_NAME --overwrite --platform=win32 --arch=x64 --prune=true --out=release-builds",
+    "build:windows-32": "electron-packager . YOUR_APP_NAME --overwrite --platform=win32 --arch=ia32 --prune=true --out=release-builds"
+  },
+  "keywords": [
+    "electron",
+    "desktop",
+    "app",
+    "packager"
+  ],
+  "author": "queco",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^26.2.4",
+    "electron-packager": "^17.1.2"
+  }
+}
