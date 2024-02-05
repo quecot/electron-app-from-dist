@@ -62,6 +62,10 @@ npm run build:windows-32
 
 If you're building your web application with Vite, ensure you set "base": "./", in your vite.config.js or vite.config.ts to ensure correct asset paths in the built Electron app.
 
+## Note for Astro Users
+
+Astro does not allow for non-url paths as base, which can be seen discussed in [this issue](https://github.com/withastro/astro/issues/2163#issuecomment-994145837). For a quick fix, you can check out [astro-relative-links](https://www.npmjs.com/package/astro-relative-links).
+
 ## License
 
 This project is licensed under the MIT License.
